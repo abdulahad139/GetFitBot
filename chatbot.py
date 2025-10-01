@@ -1,6 +1,5 @@
 from langchain_groq import ChatGroq
 from langchain.memory import ConversationSummaryBufferMemory
-from langchain.schema import HumanMessage, AIMessage
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import LLMChain
 import streamlit as st
@@ -64,3 +63,4 @@ class FitnessCoachChatbot:
             error_msg = f"I apologize, but I'm experiencing a technical issue. Please try again. Error: {str(e)}"
             st.error(f"API Error: {str(e)}")
             return error_msg
+
